@@ -3,12 +3,311 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <title>TPL - The Planet Life</title>
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      body {
+        font-family: "Poppins", serif;
+        color: #111747;
+      }
+    </style>
+
+    <script>
+      function submitMailchimp(e) {
+        console.log({ e });
+        window.alert("TODO: integrate mailchimp.");
+      }
+    </script>
   </head>
 
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="flex flex-col">
+    <header class="flex justify-between items-center px-6 lg:px-40 py-10">
+      <!-- TODO: Add larger svg / png image version for 40x40 px -->
+      <div class="flex gap-3 items-center">
+        <img
+          src="./images/tpl-logo-full.svg"
+          height="40px"
+          alt="The Planet Life Logo"
+        />
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <g clip-path="url(#clip0_4561_2019)">
+          <path
+            d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z"
+            fill="#111747"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_4561_2019">
+            <rect width="24" height="24" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </header>
+
+    <!-- Introductory Section-->
+    <section class="flex flex-col px-6 lg:px-40">
+      <h1 class="text-4xl lg:text-7xl mb-14">
+        Empowering employees to accelerate your organisation's sustainability
+        journey.
+      </h1>
+
+      <p class="text-base mb-10">
+        Employees can significantly impact and drive progress towards
+        sustainability goals. We connect corporate climate targets with employee
+        well-being. By fostering learning and promoting climate-smart practices,
+        we empower employees, accelerate impact, and foster a culture of
+        sustainability.
+      </p>
+
+      <button class="rounded-full py-3 w-[180px] bg-blue-700 text-white">
+        Sign Up
+      </button>
+
+      <!-- TODO: overlapping images-->
+      <div class="relative mt-16 mb-[90px] min-h-max">
+        <img
+          src="./images/pexels-jopwell-2422281 2.png"
+          width="325px"
+          height="235px"
+          class="absolute left-[55px] top-0 -z-10"
+          alt="Three people around a table collaborating on work together positively."
+        />
+
+        <img
+          src="./images/pexels-jan-kopřiva-3315512.png"
+          width="118px"
+          height="247px"
+          class="mt-[19px]"
+          alt="Wind turbine in a field against a blue sky."
+        />
+      </div>
+
+      <div class="w-full h-[2px] bg-[#DDE8FB] mb-6">
+        <!-- Divider -->
+      </div>
+
+      <h3 class="text-3xl mb-4">
+        Harness the power of your employees and reach your climate goals faster
+      </h3>
+
+      <p class="text-base">
+        Create a climate-friendly work culture that contributes to hitting
+        organisational overall sustainability targets and bridges the climate
+        knowledge gap.
+      </p>
+    </section>
+
+    <!-- 3 Steps Section: Understand, Educate, Activate -->
+    <section
+      class="flex flex-col py-14 gap-[60px] items-center bg-[#F8F4EE] rounded-md mt-[60px]"
+    >
+      <div class="flex flex-col items-center max-w-[70%]">
+        <img
+          src="./images/loving.svg"
+          width="175px"
+          height="125px"
+          alt="Illustration of a person expressing love"
+          class="bg-2"
+        />
+        <p class="text-sm uppercase text-[#FA7DD6]">Step 1</p>
+        <h5 class="mb-4">Understand</h5>
+        <p class="text-base text-center">
+          Capture, analyse and visualise the awareness and activation level of
+          your employees.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center max-w-[70%]">
+        <img
+          src="./images/reading.svg"
+          width="123px"
+          height="143px"
+          alt="illustration of a person reading"
+          class="bg-2"
+        />
+        <p class="text-sm uppercase text-[#FA7DD6]">Step 2</p>
+        <h5 class="mb-4">Educate</h5>
+        <p class="text-base text-center">
+          Co-create and help employees understand your corporate sustainability
+          goals, and why it's important to act
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center max-w-[70%]">
+        <img
+          src="./images/float.svg"
+          width="214px"
+          height="152px"
+          alt="Illustration of a person playing a sport"
+          class="bg-2"
+        />
+        <p class="text-sm uppercase text-[#FA7DD6]">Step 3</p>
+        <h5 class="mb-4">Activate</h5>
+        <p class="text-base text-center">
+          Employee opportunities to reduce emissions and contribute towards a
+          sustainable society
+        </p>
+      </div>
+    </section>
+
+    <!-- Logo Quote Section -->
+    <section class="px-6 py-[180px] relative">
+      <img
+        src="./images/tpl-logo-light-blue.svg"
+        alt="The Planet Life Logo"
+        class="absolute left-[12.5%] right-[12.5%] -z-10 top-[25%] mx-auto"
+      />
+
+      <p class="text-3xl">
+        “The climate challenge has become a top ethical consideration for an
+        increasingly conscious workforce.”
+      </p>
+    </section>
+
+    <!-- Benefits of Signing Up Section -->
+    <section class="bg-[#D9EEE0] py-[90px] px-6 flex flex-col">
+      <h3 class="text-3xl">
+        Create a culture of sustainability within the organisation, and provide
+        opportunities for employees to contribute to the effort
+      </h3>
+
+      <button class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-10">
+        Sign Up
+      </button>
+
+      <img
+        src="./images/pexels-cottonbro-5329438 1.png"
+        alt="A group of 6 people rushing the same direction."
+        class="mb-[60px] w-full"
+      />
+
+      <h5 class="text-base font-bold mb-4">
+        Meet sustainability targets more quickly and efficiently.
+      </h5>
+      <p class="text-base font-light">
+        Involve employees in the effort and tap into a diverse range of skills,
+        experiences, and perspectives. This helps to set realistic corporate
+        climate objectives, leads to more innovative solutions, and creates a
+        greater sense of ownership and accountability for achieving
+        sustainability goals.
+      </p>
+
+      <div class="w-full h-[2px] bg-[#BCD3BD] my-12"><!-- Divider--></div>
+
+      <h5 class="text-base font-bold mb-4">
+        Attract and retain committed talent.
+      </h5>
+      <p class="text-base font-light">
+        Employees are increasingly looking for companies that share their values
+        and are committed to making a positive impact. By creating a culture of
+        sustainability and providing opportunities for employees to contribute,
+        companies can attract and retain talent.
+      </p>
+
+      <div class="w-full h-[2px] bg-[#BCD3BD] my-12"><!-- Divider--></div>
+
+      <h5 class="text-base font-bold mb-4">
+        Be more resilient in the face of environmental challenges.
+      </h5>
+      <p class="text-base font-light">
+        By adopting a leading climate role, companies reduce their exposure to
+        risks such as supply chain disruptions, reputational damage, and
+        regulatory penalties. This helps to maintain a competitive edge and
+        ensure long-term success.
+      </p>
+    </section>
+
+    <!-- Supporters Section -->
+    <section class="flex flex-col items-center gap-20 py-32">
+      <h5 class="uppercase text-[#808080]">Proudly Supported By</h5>
+
+      <img
+        src="./images/impact-central.png"
+        width="205px"
+        height="47px"
+        alt="Impact Central Logo"
+        class="grayscale"
+      />
+
+      <img
+        src="./images/allia-future-business-center.png"
+        width="205px"
+        height="47px"
+        alt="Allia Future Business Center Logo"
+        class="grayscale"
+      />
+
+      <img
+        src="./images/crowd-solve.png"
+        width="205px"
+        height="47px"
+        alt="Crowd Solve Logo"
+        class="grayscale"
+      />
+    </section>
+
+    <!-- Mailchimp Signup Form -->
+    <section class="flex flex-col bg-[#DDE8FB] pt-[90px] px-6">
+      <h3 class="text-3xl font-bold">
+        Ready to take organisational responsibility for climate action? Show
+        your interest and receive our free report
+        <a href="#"
+          ><!--TODO: get source link for this report-->'How to accelerate
+          organisational sustainability goals through employee engagement'</a
+        >
+      </h3>
+
+      <form onsubmit="submitMailchimp()" class="flex flex-col gap-3 mt-12">
+        <input
+          type="text"
+          placeholder="Your name"
+          class="rounded-full py-3 px-4"
+        />
+
+        <input
+          type="text"
+          placeholder="Your company email"
+          class="rounded-full py-3 px-4"
+        />
+
+        <button
+          type="submit"
+          class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-9"
+        >
+          Sign Up
+        </button>
+      </form>
+
+      <img
+        src="./images/plant.svg"
+        height="220px"
+        width="293px"
+        alt="A person happily carrying a large potted plant."
+        class="mx-auto"
+      />
+    </section>
+
+    <footer class="flex flex-col">
+      <img
+        src="./images/tpl-logo-full.svg"
+        height="40px"
+        alt="The Planet Life Logo"
+      />
+
+      TODO
+    </footer>
   </body>
 </html>
