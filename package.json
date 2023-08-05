@@ -1,0 +1,10 @@
+{
+  "name": "tpl-landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "JNotelddim <JNotelddim@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
