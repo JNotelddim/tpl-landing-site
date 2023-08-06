@@ -33,8 +33,16 @@
         window.alert("TODO: integrate mailchimp.");
       }
 
-      function openMenuDrawer() {
-        window.alert("TODO: implement menu drawer");
+      function openMobileNav() {
+        const mobileNav = document.getElementById("mobile-nav");
+        mobileNav.classList.remove("hidden");
+        mobileNav.classList.add("flex");
+      }
+
+      function closeMobileNav() {
+        const mobileNav = document.getElementById("mobile-nav");
+        mobileNav.classList.remove("flex");
+        mobileNav.classList.add("hidden");
       }
 
       /**
@@ -42,11 +50,15 @@
        * then re-add it to the one which was just clicked.
        * (Except for the "Signup" button/link because its background is blue, so the text becomes illegible.)
        */
-      function onAnchorClick(el) {
-        const links = document.querySelectorAll("#nav a");
+      function onAnchorClick(el, isMobile) {
+        const links = document.querySelectorAll("#nav a, #mobile-nav a");
         links?.forEach((linkEl) => linkEl.classList.remove("current"));
         if (el.getAttribute("href") !== "#signup") {
           el.classList.add("current");
+        }
+
+        if (isMobile) {
+          closeMobileNav();
         }
       }
     </script>
@@ -73,7 +85,8 @@
       <!-- Mobile Menu Icon-->
       <button
         class="flex bg-none rounded-full p-4 lg:hidden justify-end"
-        onClick="openMenuDrawer()"
+        onClick="openMobileNav()"
+        aria-label="Open Nav Menu"
       >
         <img src="./images/menu-icon.svg" alt="Menu Icon" />
       </button>
@@ -97,6 +110,97 @@
         >
       </nav>
     </header>
+
+    <!-- Mobile-only Nav Menu -->
+    <nav
+      id="mobile-nav"
+      class="hidden lg:hidden fixed z-20 px-6 py-9 w-screen h-screen bg-white flex-col overflow-y-auto"
+    >
+      <div class="flex flex-row mb-14">
+        <div class="flex flex-1 gap-3 items-center">
+          <img
+            src="./images/tpl-logo-full.svg"
+            height="40px"
+            alt="The Planet Life Logo"
+          />
+        </div>
+
+        <button
+          class="flex bg-none rounded-full p-4 lg:hidden justify-end"
+          aria-label="Close Nav Menu"
+          onClick="closeMobileNav()"
+        >
+          <img src="./images/x-icon.svg" alt="Close Icon" />
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-10">
+        <a href="#" onclick="onAnchorClick(this, true)" class="text-2xl current"
+          >Home</a
+        >
+
+        <a
+          href="#how-it-works"
+          onclick="onAnchorClick(this, true)"
+          class="text-2xl"
+          >How it works</a
+        >
+
+        <a href="#benefits" onclick="onAnchorClick(this, true)" class="text-2xl"
+          >Benefits</a
+        >
+
+        <a
+          href="#signup"
+          onclick="onAnchorClick(this, true)"
+          class="rounded-full py-3 w-[180px] bg-blue-700 text-white text-center"
+          >Sign up</a
+        >
+      </div>
+
+      <div class="flex flex-col my-16 gap-6">
+        <p class="text-xl max-w-[80%]">
+          'We Do Not Inherit the Earth from Our Ancestors; We Borrow It from Our
+          Children.'
+        </p>
+
+        <div class="flex flex-row gap-4">
+          <!-- Instagram button: TODO: link -->
+          <a
+            href="#"
+            class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
+            aria-label="Open On Instagram"
+          >
+            <img
+              src="./images/instagram-logo.svg"
+              alt="Instagram Logo"
+              height="20px"
+              width="20px"
+            />
+          </a>
+
+          <!-- LinkedIn button: TODO: link -->
+          <a
+            href="#"
+            class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
+            aria-label="Open On LinkedIn"
+          >
+            <img
+              src="./images/linkedin-logo.svg"
+              alt="LinkedIn Logo"
+              height="20px"
+              width="20px"
+            />
+          </a>
+        </div>
+      </div>
+
+      <p>
+        Get in touch
+        <br />
+        <a href="mailto:save@theplanet.life">save@theplanet.life</a>
+      </p>
+    </nav>
 
     <!-- Introductory Section-->
     <section class="flex flex-col px-6 lg:px-40 mt-[128px]">
