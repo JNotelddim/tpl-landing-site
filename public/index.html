@@ -19,12 +19,35 @@
         font-family: "Poppins", "Karla", serif;
         color: #111747;
       }
+
+      a.current {
+        color: #1349e0;
+      }
     </style>
 
     <script>
+      let activeSection = "#";
+
       function submitMailchimp(e) {
         console.log({ e });
         window.alert("TODO: integrate mailchimp.");
+      }
+
+      function openMenuDrawer() {
+        window.alert("TODO: implement menu drawer");
+      }
+
+      /**
+       * When one of the Nav anchors is clicked, remove the "current" class from all anchors,
+       * then re-add it to the one which was just clicked.
+       * (Except for the "Signup" button/link because its background is blue, so the text becomes illegible.)
+       */
+      function onAnchorClick(el) {
+        const links = document.querySelectorAll("#nav a");
+        links?.forEach((linkEl) => linkEl.classList.remove("current"));
+        if (el.getAttribute("href") !== "#signup") {
+          el.classList.add("current");
+        }
       }
     </script>
   </head>
@@ -36,9 +59,10 @@
   -->
 
   <body class="flex flex-col max-w-[1860px] mx-auto">
-    <header class="flex justify-between items-center px-6 lg:px-40 py-10">
-      <!-- TODO: Add larger svg / png image version for 40x40 px -->
-      <div class="flex gap-3 items-center">
+    <header
+      class="fixed flex justify-between items-center px-6 lg:px-40 py-8 bg-white w-full z-10"
+    >
+      <div class="flex flex-1 gap-3 items-center">
         <img
           src="./images/tpl-logo-full.svg"
           height="40px"
@@ -46,29 +70,36 @@
         />
       </div>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
+      <!-- Mobile Menu Icon-->
+      <button
+        class="flex bg-none rounded-full p-4 lg:hidden justify-end"
+        onClick="openMenuDrawer()"
       >
-        <g clip-path="url(#clip0_4561_2019)">
-          <path
-            d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z"
-            fill="#111747"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_4561_2019">
-            <rect width="24" height="24" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
+        <img src="./images/menu-icon.svg" alt="Menu Icon" />
+      </button>
+
+      <!-- Desktop Nav Items-->
+      <nav
+        id="nav"
+        class="hidden lg:flex flex-row flex-1 gap-12 items-center justify-end"
+      >
+        <a href="#" onclick="onAnchorClick(this)" class="current">Home</a>
+
+        <a href="#how-it-works" onclick="onAnchorClick(this)">How it works</a>
+
+        <a href="#benefits" onclick="onAnchorClick(this)">Benefits</a>
+
+        <a
+          href="#signup"
+          onclick="onAnchorClick(this)"
+          class="rounded-full py-3 w-[180px] bg-blue-700 text-white text-center"
+          >Sign up</a
+        >
+      </nav>
     </header>
 
     <!-- Introductory Section-->
-    <section class="flex flex-col px-6 lg:px-40">
+    <section class="flex flex-col px-6 lg:px-40 mt-[128px]">
       <h1
         class="text-4xl lg:text-7xl mb-14 leading-normal lg:leading-normal tracking-wider"
       >
@@ -122,6 +153,7 @@
         </div>
 
         <h3
+          id="how-it-works"
           class="text-3xl mb-4 leading-normal lg:leading-normal lg:max-w-[90%]"
         >
           Harness the power of your employees and reach your climate goals
@@ -211,6 +243,7 @@
 
     <!-- Benefits of Signing Up Section -->
     <section
+      id="benefits"
       class="bg-[#D9EEE0] py-[90px] px-6 grid grid-cols-1 lg:grid-cols-2 lg:gap-[90px] rounded-lg lg:mx-36 lg:px-[90px]"
     >
       <div class="grid lg:row-span-2">
@@ -309,7 +342,7 @@
     <!-- Mailchimp Signup Form -->
     <section
       id="signup"
-      class="flex flex-col bg-[#DDE8FB] pt-[90px] px-6 lg:mx-36 lg:px-[90px] lg:relative"
+      class="flex flex-col rounded-lg bg-[#DDE8FB] pt-[90px] px-6 lg:mx-36 lg:px-[90px] lg:relative"
     >
       <div class="lg:max-w-[70%] lg:pb-16">
         <h3
