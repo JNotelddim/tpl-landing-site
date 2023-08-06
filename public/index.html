@@ -32,8 +32,6 @@
   <!--
     TODO:
     - header scrollover menu
-    - anchors for links
-    - click handlers
     - mailchimp integration
   -->
 
@@ -88,9 +86,12 @@
             and foster a culture of sustainability.
           </p>
 
-          <button class="rounded-full py-3 w-[180px] bg-blue-700 text-white">
+          <a
+            href="#signup"
+            class="rounded-full py-3 w-[180px] bg-blue-700 text-white text-center"
+          >
             Sign Up
-          </button>
+          </a>
         </div>
 
         <!-- TODO: overlapping images-->
@@ -212,24 +213,25 @@
     <section
       class="bg-[#D9EEE0] py-[90px] px-6 grid grid-cols-1 lg:grid-cols-2 lg:gap-[90px] rounded-lg lg:mx-36 lg:px-[90px]"
     >
-      <div class="lg:row-span-2">
-        <div class="col-span-1">
+      <div class="grid lg:row-span-2">
+        <div class="grid col-span-1">
           <h3 class="text-3xl lg:text-4xl leading-normal lg:leading-normal">
             Create a culture of sustainability within the organisation, and
             provide opportunities for employees to contribute to the effort
           </h3>
 
-          <button
-            class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-10"
+          <a
+            href="#signup"
+            class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-10 text-center"
           >
             Sign Up
-          </button>
+          </a>
         </div>
 
         <img
           src="./images/pexels-cottonbro-5329438 1.png"
           alt="A group of 6 people rushing the same direction."
-          class="col-span-1 w-full lg:mt-10"
+          class="grid col-span-1 w-full lg:mt-10"
         />
       </div>
 
@@ -306,6 +308,7 @@
 
     <!-- Mailchimp Signup Form -->
     <section
+      id="signup"
       class="flex flex-col bg-[#DDE8FB] pt-[90px] px-6 lg:mx-36 lg:px-[90px] lg:relative"
     >
       <div class="lg:max-w-[70%] lg:pb-16">
