@@ -2179,6 +2179,10 @@ video {
   vertical-align: super;
 }
 
+.font-\[\'Karla\'\] {
+  font-family: 'Karla';
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2285,6 +2289,14 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -2311,6 +2323,11 @@ video {
 
 .text-\[\#11174799\] {
   color: #11174799;
+}
+
+.text-\[\#1349E0\] {
+  --tw-text-opacity: 1;
+  color: rgb(19 73 224 / var(--tw-text-opacity));
 }
 
 .underline {
