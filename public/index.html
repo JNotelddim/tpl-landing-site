@@ -73,61 +73,78 @@
 
     <!-- Introductory Section-->
     <section class="flex flex-col px-6 lg:px-40">
-      <h1 class="text-4xl lg:text-7xl mb-14 leading-normal tracking-wider">
+      <h1
+        class="text-4xl lg:text-7xl mb-14 leading-normal lg:leading-normal tracking-wider"
+      >
         Empowering employees to accelerate your organisation's sustainability
         journey.
       </h1>
 
-      <p class="text-base font-light font-['Karla'] mb-10">
-        Employees can significantly impact and drive progress towards
-        sustainability goals. We connect corporate climate targets with employee
-        well-being. By fostering learning and promoting climate-smart practices,
-        we empower employees, accelerate impact, and foster a culture of
-        sustainability.
-      </p>
+      <div class="flex flex-col lg:flex-row-reverse">
+        <div class="flex flex-col lg:flex-1 lg:pl-12">
+          <p class="text-base font-light font-['Karla'] lg:text-2xl mb-10">
+            Employees can significantly impact and drive progress towards
+            sustainability goals. We connect corporate climate targets with
+            employee well-being. By fostering learning and promoting
+            climate-smart practices, we empower employees, accelerate impact,
+            and foster a culture of sustainability.
+          </p>
 
-      <button class="rounded-full py-3 w-[180px] bg-blue-700 text-white">
-        Sign Up
-      </button>
+          <button class="rounded-full py-3 w-[180px] bg-blue-700 text-white">
+            Sign Up
+          </button>
+        </div>
 
-      <!-- TODO: overlapping images-->
-      <div class="relative mt-16 mb-[90px] min-h-max overflow-hidden">
-        <img
-          src="./images/pexels-jopwell-2422281 2.png"
-          width="325px"
-          height="235px"
-          class="absolute left-[55px] top-0 -z-10"
-          alt="Three people around a table collaborating on work together positively."
-        />
+        <!-- TODO: overlapping images-->
+        <div
+          class="relative mt-16 mb-[90px] min-h-max overflow-hidden lg:flex-1"
+        >
+          <img
+            src="./images/pexels-jopwell-2422281 2.png"
+            width="325px"
+            height="235px"
+            class="absolute left-[55px] top-0 -z-10"
+            alt="Three people around a table collaborating on work together positively."
+          />
 
-        <img
-          src="./images/pexels-jan-kopřiva-3315512.png"
-          width="118px"
-          height="247px"
-          class="mt-[19px]"
-          alt="Wind turbine in a field against a blue sky."
-        />
+          <img
+            src="./images/pexels-jan-kopřiva-3315512.png"
+            width="118px"
+            height="247px"
+            class="mt-[19px]"
+            alt="Wind turbine in a field against a blue sky."
+          />
+        </div>
       </div>
 
-      <div class="w-full h-[2px] bg-[#DDE8FB] mb-6">
-        <!-- Divider -->
+      <div class="flex flex-col lg:max-w-[56%]">
+        <div class="w-full h-[2px] bg-[#DDE8FB] mb-6">
+          <!-- Divider -->
+        </div>
+
+        <h3
+          class="text-3xl mb-4 leading-normal lg:leading-normal lg:max-w-[90%]"
+        >
+          Harness the power of your employees and reach your climate goals
+          faster
+        </h3>
+
+        <p class="text-base font-['Karla'] lg:text-2xl lg:max-w-[80%]">
+          Create a climate-friendly work culture that contributes to hitting
+          organisational overall sustainability targets and bridges the climate
+          knowledge gap.
+        </p>
       </div>
-
-      <h3 class="text-3xl mb-4 leading-normal">
-        Harness the power of your employees and reach your climate goals faster
-      </h3>
-
-      <p class="text-base">
-        Create a climate-friendly work culture that contributes to hitting
-        organisational overall sustainability targets and bridges the climate
-        knowledge gap.
-      </p>
     </section>
 
     <!-- 3 Steps Section: Understand, Educate, Activate -->
     <section
-      class="flex flex-col py-14 gap-[60px] items-center bg-[#F8F4EE] rounded-md mt-[60px]"
+      class="flex flex-col lg:flex-row py-14 lg:mx-36 lg:px-24 gap-[60px] items-center mt-[60px] relative"
     >
+      <div class="bg-[#F8F4EE] absolute inset-0 lg:top-36 -z-10 rounded-md">
+        <!-- Desktop Underlying Colored Background w/ Partial-height -->
+      </div>
+
       <div class="flex flex-col items-center max-w-[70%]">
         <img
           src="./images/loving.svg"
@@ -178,139 +195,164 @@
     </section>
 
     <!-- Logo Quote Section -->
-    <section class="px-6 py-[180px] relative">
+    <section class="px-6 py-[180px] relative flex justify-center">
       <img
         src="./images/tpl-logo-light-blue.svg"
         alt="The Planet Life Logo"
         class="absolute left-[12.5%] right-[12.5%] -z-10 top-[25%] mx-auto"
       />
 
-      <p class="text-3xl text-center">
+      <p
+        class="text-3xl text-center leading-normal lg:leading-normal lg:text-[56px] lg:max-w-[1100px]"
+      >
         “The climate challenge has become a top ethical consideration for an
         increasingly conscious workforce.”
       </p>
     </section>
 
     <!-- Benefits of Signing Up Section -->
-    <section class="bg-[#D9EEE0] py-[90px] px-6 flex flex-col">
-      <h3 class="text-3xl">
-        Create a culture of sustainability within the organisation, and provide
-        opportunities for employees to contribute to the effort
-      </h3>
+    <section
+      class="bg-[#D9EEE0] py-[90px] px-6 grid grid-cols-1 lg:grid-cols-2 lg:gap-[90px] rounded-lg lg:mx-36 lg:px-[90px]"
+    >
+      <div class="lg:row-span-2">
+        <div class="col-span-1">
+          <h3 class="text-3xl lg:text-4xl leading-normal lg:leading-normal">
+            Create a culture of sustainability within the organisation, and
+            provide opportunities for employees to contribute to the effort
+          </h3>
 
-      <button class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-10">
-        Sign Up
-      </button>
+          <button
+            class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-10"
+          >
+            Sign Up
+          </button>
+        </div>
 
-      <img
-        src="./images/pexels-cottonbro-5329438 1.png"
-        alt="A group of 6 people rushing the same direction."
-        class="mb-[60px] w-full"
-      />
+        <img
+          src="./images/pexels-cottonbro-5329438 1.png"
+          alt="A group of 6 people rushing the same direction."
+          class="col-span-1 w-full lg:mt-10"
+        />
+      </div>
 
-      <h5 class="text-base font-bold mb-4">
-        Meet sustainability targets more quickly and efficiently.
-      </h5>
-      <p class="text-base font-light font-['Karla']">
-        Involve employees in the effort and tap into a diverse range of skills,
-        experiences, and perspectives. This helps to set realistic corporate
-        climate objectives, leads to more innovative solutions, and creates a
-        greater sense of ownership and accountability for achieving
-        sustainability goals.
-      </p>
+      <div
+        class="lg:row-span-2 flex flex-col justify-between text-base lg:text-2xl"
+      >
+        <h5 class="font-bold mb-4 lg:max-w-[60%]">
+          Meet sustainability targets more quickly and efficiently.
+        </h5>
+        <p class="font-light font-['Karla']">
+          Involve employees in the effort and tap into a diverse range of
+          skills, experiences, and perspectives. This helps to set realistic
+          corporate climate objectives, leads to more innovative solutions, and
+          creates a greater sense of ownership and accountability for achieving
+          sustainability goals.
+        </p>
 
-      <div class="w-full h-[2px] bg-[#BCD3BD] my-12"><!-- Divider--></div>
+        <div class="w-full h-[2px] bg-[#BCD3BD] my-12"><!-- Divider--></div>
 
-      <h5 class="text-base font-bold mb-4">
-        Attract and retain committed talent.
-      </h5>
-      <p class="text-base font-light font-['Karla']">
-        Employees are increasingly looking for companies that share their values
-        and are committed to making a positive impact. By creating a culture of
-        sustainability and providing opportunities for employees to contribute,
-        companies can attract and retain talent.
-      </p>
+        <h5 class="font-bold mb-4 lg:max-w-[80%]">
+          Attract and retain committed talent.
+        </h5>
+        <p class="font-light font-['Karla']">
+          Employees are increasingly looking for companies that share their
+          values and are committed to making a positive impact. By creating a
+          culture of sustainability and providing opportunities for employees to
+          contribute, companies can attract and retain talent.
+        </p>
 
-      <div class="w-full h-[2px] bg-[#BCD3BD] my-12"><!-- Divider--></div>
+        <div class="w-full h-[2px] bg-[#BCD3BD] my-12"><!-- Divider--></div>
 
-      <h5 class="text-base font-bold mb-4">
-        Be more resilient in the face of environmental challenges.
-      </h5>
-      <p class="text-base font-light font-['Karla']">
-        By adopting a leading climate role, companies reduce their exposure to
-        risks such as supply chain disruptions, reputational damage, and
-        regulatory penalties. This helps to maintain a competitive edge and
-        ensure long-term success.
-      </p>
+        <h5 class="font-bold mb-4 lg:max-w-[60%]">
+          Be more resilient in the face of environmental challenges.
+        </h5>
+        <p class="font-light font-['Karla']">
+          By adopting a leading climate role, companies reduce their exposure to
+          risks such as supply chain disruptions, reputational damage, and
+          regulatory penalties. This helps to maintain a competitive edge and
+          ensure long-term success.
+        </p>
+      </div>
     </section>
 
     <!-- Supporters Section -->
     <section class="flex flex-col items-center gap-20 py-32">
       <h5 class="uppercase text-[#808080]">Proudly Supported By</h5>
 
-      <img
-        src="./images/impact-central.png"
-        width="205px"
-        height="47px"
-        alt="Impact Central Logo"
-        class="grayscale"
-      />
+      <div class="flex flex-col gap-20 lg:flex-row lg:items-center">
+        <img
+          src="./images/impact-central.png"
+          width="205px"
+          height="47px"
+          alt="Impact Central Logo"
+          class="grayscale"
+        />
 
-      <img
-        src="./images/allia-future-business-center.png"
-        width="205px"
-        height="47px"
-        alt="Allia Future Business Center Logo"
-        class="grayscale"
-      />
+        <img
+          src="./images/allia-future-business-center.png"
+          width="205px"
+          height="47px"
+          alt="Allia Future Business Center Logo"
+          class="grayscale"
+        />
 
-      <img
-        src="./images/crowd-solve.png"
-        width="205px"
-        height="47px"
-        alt="Crowd Solve Logo"
-        class="grayscale"
-      />
+        <img
+          src="./images/crowd-solve.png"
+          width="205px"
+          height="47px"
+          alt="Crowd Solve Logo"
+          class="grayscale"
+        />
+      </div>
     </section>
 
     <!-- Mailchimp Signup Form -->
-    <section class="flex flex-col bg-[#DDE8FB] pt-[90px] px-6">
-      <h3 class="text-3xl font-bold leading-normal">
-        Ready to take organisational responsibility for climate action? Show
-        your interest and receive our free report <br />
-        <a href="#" class="text-[#1349E0]"
-          ><!--TODO: get source link for this report-->'How to accelerate
-          organisational sustainability goals through employee engagement'</a
+    <section
+      class="flex flex-col bg-[#DDE8FB] pt-[90px] px-6 lg:mx-36 lg:px-[90px] lg:relative"
+    >
+      <div class="lg:max-w-[70%] lg:pb-16">
+        <h3
+          class="text-3xl lg:text-4xl font-bold leading-normal lg:leading-normal"
         >
-      </h3>
+          Ready to take organisational responsibility for climate action? Show
+          your interest and receive our free report <br class="lg:hidden" />
+          <a href="#" class="text-[#1349E0]"
+            ><!--TODO: get source link for this report-->'How to accelerate
+            organisational sustainability goals through employee engagement'</a
+          >
+        </h3>
 
-      <form onsubmit="submitMailchimp()" class="flex flex-col gap-3 mt-12">
-        <input
-          type="text"
-          placeholder="Your name"
-          class="rounded-full py-3 px-4"
-        />
-
-        <input
-          type="text"
-          placeholder="Your company email"
-          class="rounded-full py-3 px-4"
-        />
-
-        <button
-          type="submit"
-          class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-9"
+        <form
+          onsubmit="submitMailchimp()"
+          class="flex flex-col gap-3 mt-12 lg:max-w-[60%]"
         >
-          Sign Up
-        </button>
-      </form>
+          <input
+            type="text"
+            placeholder="Your name"
+            class="rounded-full py-3 px-4"
+          />
+
+          <input
+            type="text"
+            placeholder="Your company email"
+            class="rounded-full py-3 px-4"
+          />
+
+          <button
+            type="submit"
+            class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-9"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
 
       <img
         src="./images/plant.svg"
         height="220px"
         width="293px"
         alt="A person happily carrying a large potted plant."
-        class="mx-auto"
+        class="mx-auto lg:absolute lg:right-[20%] lg:bottom-0"
       />
     </section>
 
