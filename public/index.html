@@ -39,7 +39,7 @@
 
   -->
 
-  <body class="flex flex-col">
+  <body class="flex flex-col max-w-[1860px] mx-auto">
     <header class="flex justify-between items-center px-6 lg:px-40 py-10">
       <!-- TODO: Add larger svg / png image version for 40x40 px -->
       <div class="flex gap-3 items-center">
@@ -236,7 +236,7 @@
       </div>
 
       <div
-        class="lg:row-span-2 flex flex-col justify-between text-base lg:text-2xl"
+        class="lg:row-span-2 flex flex-col justify-between text-base mt-16 lg:mt-0 lg:text-2xl"
       >
         <h5 class="font-bold mb-4 lg:max-w-[60%]">
           Meet sustainability targets more quickly and efficiently.
@@ -356,62 +356,70 @@
       />
     </section>
 
-    <footer class="flex flex-col py-20 px-6">
-      <img
-        src="./images/tpl-logo-full.svg"
-        height="40px"
-        alt="The Planet Life Logo"
-        class="mb-10"
-      />
+    <footer class="flex flex-col lg:flex-row py-20 px-6 lg:mx-36 lg:px-[90px]">
+      <div class="flex flex-col lg:flex-1">
+        <img
+          src="./images/tpl-logo-full.svg"
+          height="40px"
+          alt="The Planet Life Logo"
+          class="mb-10 max-w-[240px]"
+        />
 
-      <p class="text-xl mb-7">
-        'We Do Not Inherit the Earth from Our Ancestors; We Borrow It from Our
-        Children.'
-      </p>
+        <p class="text-xl mb-7">
+          'We Do Not Inherit the Earth from Our Ancestors; We Borrow It from Our
+          Children.'
+        </p>
 
-      <div class="flex flex-row gap-4">
-        <!-- Instagram button: TODO: link -->
-        <a
-          href="#"
-          class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
-          aria-label="Open On Instagram"
-        >
-          <img
-            src="./images/instagram-logo.svg"
-            alt="Instagram Logo"
-            height="20px"
-            width="20px"
-          />
-        </a>
+        <div class="flex flex-row gap-4">
+          <!-- Instagram button: TODO: link -->
+          <a
+            href="#"
+            class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
+            aria-label="Open On Instagram"
+          >
+            <img
+              src="./images/instagram-logo.svg"
+              alt="Instagram Logo"
+              height="20px"
+              width="20px"
+            />
+          </a>
 
-        <!-- LinkedIn button: TODO: link -->
-        <a
-          href="#"
-          class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
-          aria-label="Open On LinkedIn"
-        >
-          <img
-            src="./images/linkedin-logo.svg"
-            alt="LinkedIn Logo"
-            height="20px"
-            width="20px"
-          />
-        </a>
+          <!-- LinkedIn button: TODO: link -->
+          <a
+            href="#"
+            class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
+            aria-label="Open On LinkedIn"
+          >
+            <img
+              src="./images/linkedin-logo.svg"
+              alt="LinkedIn Logo"
+              height="20px"
+              width="20px"
+            />
+          </a>
+        </div>
       </div>
 
-      <p class="my-10">
-        Get in touch
-        <br />
-        <a href="mailto:save@theplanet.life">save@theplanet.life</a>
-      </p>
+      <div class="flex flex-col lg:flex-[2] lg:justify-end lg:items-end">
+        <div class="flex flex-col lg:flex-row lg:gap-60">
+          <p class="my-10 lg:my-0">
+            Get in touch
+            <br />
+            <a href="mailto:save@theplanet.life">save@theplanet.life</a>
+          </p>
 
-      <a href="./terms">Terms & Conditions</a>
-      <a href="./privacy">Privacy Policy</a>
+          <div class="flex flex-col">
+            <a href="./terms">Terms & Conditions</a>
+            <a href="./privacy">Privacy Policy</a>
+          </div>
+        </div>
 
-      <p class="mt-10 text-[#11174799]">
-        © 2023 The Planet Life ltd. <br />
-        All Rights Reserved.
-      </p>
+        <p class="mt-10 text-[#11174799]">
+          © 2023 The Planet Life ltd. <br class="lg:hidden" />
+          All Rights Reserved.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
