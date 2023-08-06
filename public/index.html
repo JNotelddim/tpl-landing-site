@@ -25,6 +25,16 @@
     </script>
   </head>
 
+  <!--
+    TODO:
+    - header scrollover menu
+    - anchors for links
+    - click handlers
+    - mailchimp integration
+    - desktop styles
+
+  -->
+
   <body class="flex flex-col">
     <header class="flex justify-between items-center px-6 lg:px-40 py-10">
       <!-- TODO: Add larger svg / png image version for 40x40 px -->
@@ -77,7 +87,7 @@
       </button>
 
       <!-- TODO: overlapping images-->
-      <div class="relative mt-16 mb-[90px] min-h-max">
+      <div class="relative mt-16 mb-[90px] min-h-max overflow-hidden">
         <img
           src="./images/pexels-jopwell-2422281 2.png"
           width="325px"
@@ -300,14 +310,62 @@
       />
     </section>
 
-    <footer class="flex flex-col">
+    <footer class="flex flex-col py-20 px-6">
       <img
         src="./images/tpl-logo-full.svg"
         height="40px"
         alt="The Planet Life Logo"
+        class="mb-10"
       />
 
-      TODO
+      <p class="text-xl mb-7">
+        'We Do Not Inherit the Earth from Our Ancestors; We Borrow It from Our
+        Children.'
+      </p>
+
+      <div class="flex flex-row gap-4">
+        <!-- Instagram button: TODO: link -->
+        <a
+          href="#"
+          class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
+          aria-label="Open On Instagram"
+        >
+          <img
+            src="./images/instagram-logo.svg"
+            alt="Instagram Logo"
+            height="20px"
+            width="20px"
+          />
+        </a>
+
+        <!-- LinkedIn button: TODO: link -->
+        <a
+          href="#"
+          class="w-12 h-12 rounded-full bg-[#111747] flex items-center justify-center"
+          aria-label="Open On LinkedIn"
+        >
+          <img
+            src="./images/linkedin-logo.svg"
+            alt="LinkedIn Logo"
+            height="20px"
+            width="20px"
+          />
+        </a>
+      </div>
+
+      <p class="my-10">
+        Get in touch
+        <br />
+        <a href="mailto:save@theplanet.life">save@theplanet.life</a>
+      </p>
+
+      <a href="./terms">Terms & Conditions</a>
+      <a href="./privacy">Privacy Policy</a>
+
+      <p class="mt-10 text-[#11174799]">
+        © 2023 The Planet Life ltd. <br />
+        All Rights Reserved.
+      </p>
     </footer>
   </body>
 </html>

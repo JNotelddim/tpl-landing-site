@@ -783,6 +783,14 @@ video {
   margin-top: 3rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -898,6 +906,14 @@ video {
   height: 4007px;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .max-h-\[220px\] {
   max-height: 220px;
 }
@@ -921,6 +937,14 @@ video {
 
 .w-\[2005px\] {
   width: 2005px;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .max-w-\[70\%\] {
@@ -1455,6 +1479,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1922,6 +1950,11 @@ video {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#111747\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 23 71 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\/images\/impact-central\.png\'\)\] {
   background-image: url('./images/impact-central.png');
 }
@@ -2081,6 +2114,11 @@ video {
   padding-right: 1rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-\[90px\] {
   padding-top: 90px;
 }
@@ -2164,6 +2202,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2264,6 +2307,10 @@ video {
 .text-\[\#808080\] {
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
+}
+
+.text-\[\#11174799\] {
+  color: #11174799;
 }
 
 .underline {
