@@ -915,6 +915,14 @@ video {
   height: 247px;
 }
 
+.max-h-24 {
+  max-height: 6rem;
+}
+
+.max-h-12 {
+  max-height: 3rem;
+}
+
 .min-h-max {
   min-height: -moz-max-content;
   min-height: max-content;
