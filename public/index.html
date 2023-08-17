@@ -460,29 +460,106 @@
           >
         </h3>
 
-        <form
-          onsubmit="submitMailchimp()"
-          class="flex flex-col gap-3 mt-12 lg:max-w-[60%]"
-        >
-          <input
-            type="text"
-            placeholder="Your name"
-            class="rounded-full py-3 px-4"
-          />
-
-          <input
-            type="text"
-            placeholder="Your company email"
-            class="rounded-full py-3 px-4"
-          />
-
-          <button
-            type="submit"
-            class="rounded-full py-3 w-[180px] bg-blue-700 text-white my-9"
-          >
-            Sign Up
-          </button>
-        </form>
+        <div id="mc_embed_shell" class="w-full">
+          <div id="mc_embed_signup">
+            <form
+              action="https://life.us20.list-manage.com/subscribe/post?u=1859c73ef91d857c5b0271135&amp;id=0a15e83427&amp;f_id=00811fe3f0"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate flex flex-col gap-3 mt-12 lg:max-w-[60%]"
+              target="_blank"
+            >
+              <div class="mc-field-group flex flex-col">
+                <label for="mce-EMAIL"
+                  >Company email address
+                  <span class="asterisk text-red-500">*</span></label
+                ><input
+                  type="email"
+                  name="EMAIL"
+                  class="required email rounded-full py-3 px-4"
+                  placeholder="Company email"
+                  id="mce-EMAIL"
+                  required=""
+                  value=""
+                />
+              </div>
+              <div class="mc-field-group flex flex-col">
+                <label for="mce-FIRSTNAME"
+                  >Your first name
+                  <span class="asterisk text-red-500">*</span></label
+                ><input
+                  type="text"
+                  name="FIRSTNAME"
+                  class="required text rounded-full py-3 px-4"
+                  id="mce-FIRSTNAME"
+                  placeholder="First name"
+                  value=""
+                  required=""
+                />
+              </div>
+              <div class="mc-field-group flex flex-col">
+                <label for="mce-LASTNAME"
+                  >Your last name
+                  <span class="asterisk text-red-500">*</span></label
+                ><input
+                  type="text"
+                  name="LASTNAME"
+                  class="required text rounded-full py-3 px-4"
+                  id="mce-LASTNAME"
+                  placeholder="Last name"
+                  value=""
+                  required=""
+                />
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <div aria-hidden="true" style="position: absolute; left: -5000px">
+                /* real people should not fill this in and expect good things -
+                do not remove this or risk form bot signups */
+                <input
+                  type="text"
+                  name="b_1859c73ef91d857c5b0271135_0a15e83427"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <button
+                type="submit"
+                class="rounded-full py-3 my-9 bg-blue-700 text-white w-[180px]"
+              >
+                Sign up
+              </button>
+            </form>
+          </div>
+          <script
+            type="text/javascript"
+            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+          ></script>
+          <script type="text/javascript">
+            (function ($) {
+              window.fnames = new Array();
+              window.ftypes = new Array();
+              fnames[0] = "EMAIL";
+              ftypes[0] = "email";
+              fnames[1] = "FIRSTNAME";
+              ftypes[1] = "text";
+              fnames[2] = "LASTNAME";
+              ftypes[2] = "text";
+            })(jQuery);
+            var $mcj = jQuery.noConflict(true);
+          </script>
+        </div>
       </div>
 
       <img
