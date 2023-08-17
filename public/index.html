@@ -72,7 +72,7 @@
 
   <body class="flex flex-col max-w-[1860px] mx-auto">
     <header
-      class="fixed flex justify-between items-center px-6 lg:px-40 py-8 bg-white w-full z-10"
+      class="flex justify-between items-center px-6 lg:px-40 py-8 bg-white w-full z-10"
     >
       <div class="flex flex-1 gap-3 items-center">
         <img
@@ -213,7 +213,19 @@
 
       <div class="flex flex-col lg:flex-row-reverse">
         <div class="flex flex-col lg:flex-1 lg:pl-12">
-          <p class="text-base font-light font-['Karla'] lg:text-2xl mb-10">
+          <p
+            class="text-base font-light font-['Karla'] lg:text-2xl mb-10 hidden lg:block max-w-[505px] lg:mt-24"
+          >
+            The Planet Life connects corporate climate goals with employee
+            well-being. We encourage, support, and actively engage employees to
+            act on climate by fostering learning and promoting climate-smart
+            practices that accelerate impact, and foster a culture of
+            sustainability.
+          </p>
+
+          <p
+            class="text-base font-light font-['Karla'] lg:text-2xl mb-10 lg:hidden"
+          >
             Employees can significantly impact and drive progress towards
             sustainability goals. We connect corporate climate targets with
             employee well-being. By fostering learning and promoting
@@ -229,23 +241,22 @@
           </a>
         </div>
 
-        <!-- TODO: overlapping images-->
         <div
           class="relative mt-16 mb-[90px] min-h-max overflow-hidden lg:flex-1"
         >
           <img
             src="./images/pexels-jopwell-2422281 2.png"
-            width="325px"
-            height="235px"
-            class="absolute left-[55px] top-0 -z-10"
+            width="690px"
+            height="500px"
+            class="absolute left-[55px] lg:left-[115px] top-0 -z-10 w-[325px] h-[235px] lg:w-[690px] lg:h-[500px]"
             alt="Three people around a table collaborating on work together positively."
           />
 
           <img
             src="./images/pexels-jan-kopřiva-3315512.png"
-            width="118px"
-            height="247px"
-            class="mt-[19px]"
+            width="250px"
+            height="525px"
+            class="mt-[19px] w-[118px] h-[247px] lg:w-[250px] lg:h-[525px]"
             alt="Wind turbine in a field against a blue sky."
           />
         </div>
